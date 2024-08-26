@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- Fichiers CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <!-- définit l'apparence de la barre de recherche, des suggestions et d'autres éléments liés à la recherche d'adresses. -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <!-- définit l'apparence des boutons, des panneaux et des lignes représentant les itinéraires sur la carte. -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="carte"></div> 
+        <input type="text" id="adresse" placeholder="Entrez une adresse">
+        <button id="ajouterMarqueur">Ajouter Marqueur</button>
+        
+
+
+        <!-- Fichier js -->
+         
+        <script src="https://unpkg.com/@turf/turf"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <!-- transformer une adresse saisie par l'utilisateur en coordonnées géographiques (latitude et longitude) afin de la localiser sur la carte. -->
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+        <!-- calculer l'itinéraire le plus court entre deux points sur la carte en fonction des données de la carte et des contraintes définies -->
+        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> 
+        <script src="scripts.js"></script>
+    </body>
+</html>
